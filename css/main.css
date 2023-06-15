@@ -39,14 +39,23 @@ header a {
     font-size: 1.5rem;
     justify-content: center;
     padding: 5px;
-    
-
 }
 
 
 
 @media screen and (min-width:768px) {
-
+    header {
+        padding: 0;
+        justify-content: flex-end;
+        
+    }
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+   
   
 } /*768*/
 
