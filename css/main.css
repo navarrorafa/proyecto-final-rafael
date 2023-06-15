@@ -13,8 +13,27 @@ img{
 video {
     width: 100%;
 }
-/* #132837 */
 
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 2px solid rgba(19, 40, 55 , 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(19, 40, 55 , 0.5) ;
+    background-color: #132837;
+    color: #fff; 
+    letter-spacing: 2px;
+    transition: color  0.3s linear;
+    margin: 60px auto;
+    display: block;
+    text-align: center;
+  
+  }
+  
+  button:hover {
+    color: rgba(105,127,137,255);
+  }
 /* HEADER */
 
 header {
@@ -39,14 +58,28 @@ header a {
     font-size: 1.5rem;
     justify-content: center;
     padding: 5px;
+    letter-spacing: 2px;
+    transition: color  0.3s linear;
+}
+
+a:hover{
+    color: rgba(105,127,137,255);
 }
 
 
 
 @media screen and (min-width:768px) {
+ 
+    
+   
+  
+} /*768*/
+
+@media screen and (min-width:992px) {
     header {
         padding: 0;
         justify-content: flex-end;
+        background-image: url(../assets/image/topo.jpg);
         
     }
     header nav ul {
@@ -54,12 +87,6 @@ header a {
         flex-wrap: wrap;
         
     }
-    
-   
-  
-} /*768*/
-
-@media screen and (min-width:992px) {
    
 }/*992*/
 
@@ -67,8 +94,98 @@ header a {
    
      }/*1200*/
 
-/* MAIN INDEX */
+
+
+
+
+
+/*----------- MAIN INDEX------------ */
+main {
+    margin: 20px 0%;
+}
+section h2 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+section p {
+    font-size: 1.3rem;
+    padding: 5% 5% 20%;
+}
+
+
+section.part2 {
+    background-color: #132837;
+    color: #fff;
+    
+}
+
+/* section part3*/
+
+.partner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    section h2 {
+        font-size: 3rem;
+    }
+    section p {
+        font-size: 1.5rem;
+        
+    }
+   
+     }/*768*/
+
+@media screen and (min-width:992px) {
+    section h2 {
+        font-size: 4rem;
+    }
+    section p {
+        font-size: 1.8rem;
+        
+    }
+   
+    }/*992*/
+
+@media screen and (min-width:1200px) {
+   
+     }/*1200*/
+
+
+
+
+
+
 
 
 /* FOOTER */
+
+footer {
+    background-color: #132837;
+    padding-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
