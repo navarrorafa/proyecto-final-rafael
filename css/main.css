@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-} 
-img{ 
+}
+
+img {
     width: 100%;
 }
+
 video {
     width: 100%;
 }
@@ -18,35 +21,37 @@ button {
     font-size: 1.5em;
     font-weight: bold;
     padding: 15px 20px;
-    border: 2px solid rgba(19, 40, 55 , 0.5);
+    border: 2px solid rgba(19, 40, 55, 0.5);
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(19, 40, 55 , 0.5) ;
+    box-shadow: 2px 2px 10px rgba(19, 40, 55, 0.5);
     background-color: #132837;
-    color: #fff; 
+    color: #fff;
     letter-spacing: 2px;
-    transition: color  0.3s linear;
+    transition: color 0.3s linear;
     margin: 60px auto;
     display: block;
     text-align: center;
-  
-  }
-  
-  button:hover {
-    color: rgba(105,127,137,255);
-  }
+
+}
+
+button:hover {
+    color: rgba(105, 127, 137, 255);
+}
+
 /* HEADER */
 
 header {
-    background-color:#132837 ;
-    display : flex ;
+    background-color: #132837;
+    display: flex;
     justify-content: center;
-    padding: 50px 0 30px 0  ;
-}
-header nav {
-
-
+    padding: 50px 0 30px 0;
 }
 
+/*header nav {
+
+
+}
+*/
 header nav ul li {
     list-style-type: none;
 }
@@ -59,40 +64,40 @@ header a {
     justify-content: center;
     padding: 5px;
     letter-spacing: 2px;
-    transition: color  0.3s linear;
+    transition: color 0.3s linear;
 }
 
-a:hover{
-    color: rgba(105,127,137,255);
+a:hover {
+    color: rgba(105, 127, 137, 255);
 }
 
 
 
-@media screen and (min-width:768px) {
- 
-    
-   
-  
-} /*768*/
+@media screen and (min-width:768px) {}
+
+/*768*/
 
 @media screen and (min-width:992px) {
     header {
         padding: 0;
         justify-content: flex-end;
         background-image: url(../assets/image/topo.jpg);
-        
+
     }
+
     header nav ul {
         display: flex;
         flex-wrap: wrap;
-        
-    }
-   
-}/*992*/
 
-@media screen and (min-width:1200px) {
-   
-     }/*1200*/
+    }
+
+}
+
+/*992*/
+
+@media screen and (min-width:1200px) {}
+
+/*1200*/
 
 
 
@@ -103,21 +108,24 @@ a:hover{
 main {
     margin: 20px 0%;
 }
-section h2 {
+
+section.mainHome h2  {
     padding-top: 10%;
     padding-bottom: 10%;
     text-align: center;
 }
-section p {
+
+section.mainHome p {
     font-size: 1.3rem;
-    padding: 5% 5% 20%;
+    padding:  5% 5% 20%;
+    text-align: justify;
 }
 
 
 section.part2 {
     background-color: #132837;
     color: #fff;
-    
+
 }
 
 /* section part3*/
@@ -142,36 +150,146 @@ section.part2 {
     section h2 {
         font-size: 3rem;
     }
+
     section p {
         font-size: 1.5rem;
-        
+
     }
-   
-     }/*768*/
+
+}
+
+/*768*/
 
 @media screen and (min-width:992px) {
     section h2 {
         font-size: 4rem;
     }
+
     section p {
         font-size: 1.8rem;
-        
+
     }
+
+}
+
+/*992*/
+
+@media screen and (min-width:1200px) {}
+
+/*1200*/
+
+/*-------- MAIN FASHION ---------------*/
+
+
+section.mainFashion h2 {
+    text-align: center;
+    padding: 4% 4% 8% 4%;
+}
+
+section.mainFashion h3, section.mainFashion h4 {
+    text-align: center;
+    margin-top: 3% ;
+    margin-left:3% ;
+}
+
+
+section.mainFashion p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 5%;
+
+}
+
+
+.eventos {
+    background-color: #132837;
+    color: #fff;
+}
+.videoHome {
+   width: 90%;
+   margin: 5% auto 5% auto;
+
+}
+
+/*section equipoe*/
+section.equipo {
    
-    }/*992*/
+}
+div.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
 
-@media screen and (min-width:1200px) {
+.caja img{
+    height: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.caja {
+    width: 45%;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
    
-     }/*1200*/
+    
+  }
+    
+  figure {
+   padding: 10% 10% 30% 10%;
+  }
+  
+
+  .caja figcaption {
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  .caja h4 {
+    font-size: 18px;
+  }
+  
+  .caja h5 {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+
+
+
+  @media screen and (min-width:768px) {
+  
+
+}/*768*/
+
+@media screen and (min-width:992px) {
+    div.galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    .caja {
+        width: 25%;
+        height: 310px;
+        margin: 10% 2% 5% 2%;
+        
+      }
+
+}/*992*/
+
+@media screen and (min-width:1200px) {}
+
+/*1200*/
 
 
 
 
 
 
-
-
-/* FOOTER */
+/*------------ FOOTER ------------*/
 
 footer {
     background-color: #132837;
@@ -188,4 +306,3 @@ footer p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
