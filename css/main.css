@@ -307,12 +307,18 @@ section.casting h1 {
 
 
 
-div.casting {
+.casting {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     flex-direction: column;
     margin-bottom: 20%;
+}
+
+.cast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card img{
@@ -353,7 +359,7 @@ div.casting {
 
   @media screen and (min-width:768px) {
     .card {
-        width: 30%;}
+        width: 20%;}
 
 }/*768*/
 
@@ -367,12 +373,18 @@ div.casting {
         flex-direction: row;
     }
     
-    .card {
+   .card {
         
         height: 310px;
         margin: 10% 1% 5% 1%;
-        
-      }
+   }
+
+   .casting figure {
+    padding: 10% 20% 30% 20%;
+   }
+   
+
+     
 
 }/*992*/
 
@@ -385,7 +397,7 @@ div.casting {
 }
 
 
-fieldset {
+.mainContacto fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -394,37 +406,37 @@ fieldset {
    border: none;
    
 }
-legend {
+.mainContacto legend {
     text-align: center;
     font-weight: bolder;
     font-size: 3rem;
     margin-bottom: 10%;
 }
-form{
+.mainContacto form{
     margin: auto;
 
 }
 
-form input {
+.mainContacto form input {
     height: 5vh;
 }
 
 
-form input , form textarea  {
+.mainContacto form input , form textarea  {
     width: 100%;
     margin-bottom: 3%; 
     
 }
-form textarea {
+.mainContacto form textarea {
     margin-top : 3%;
 }
 
-.buttonContacto {
+.mainContacto .buttonContacto {
     margin: 2% 2% 0 0 ;
     padding: 1vh 2vh;
 }
 
-.contactoPart2 {
+.mainContacto .contactoPart2 {
     width: 75%;
     margin: 2% auto 2% auto;
 }
@@ -483,6 +495,47 @@ fieldset{
 
 
 
+/* ------------ MAINLOGIN -------*/
+   .mainLogin {
+    width: 90%;
+    margin: 20% auto 50% auto;
+
+   }
+
+   .mainLogin p {
+    font-size: 1.5rem;
+}
+
+
+.mainLogin fieldset {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin: 20% auto 10% auto;
+   border: none;
+   
+}
+
+
+
+.mainLogin form input {
+    height: 5vh;
+}
+
+
+.mainLogin form input , form textarea  {
+    width: 100%;
+    margin-bottom: 3%; 
+    
+}
+
+
+.mainLogin .buttonLogin {
+    margin: 2% 2% 0 0 ;
+    padding: 1vh 1vh;
+}
+   
+  
 
 
 
@@ -505,3 +558,5 @@ footer p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
